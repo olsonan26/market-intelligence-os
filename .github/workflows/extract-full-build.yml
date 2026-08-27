@@ -23,7 +23,10 @@ jobs:
           rm -rf extracted-full-build
           mkdir -p extracted-full-build
           unzip -q "market intelligence os full build.zip" -d extracted-full-build
-          find extracted-full-build -maxdepth 4 -type f | sort | head -200
+          echo "--- SOURCE TREE ---"
+          find extracted-full-build -maxdepth 5 -type f | sort | head -300
+          echo "--- FRONTEND HITS ---"
+          grep -R -n -E "OperatorConsole|console-shell|rail-brand" extracted-full-build | head -80 || true
 
       - name: Upload extracted source
         uses: actions/upload-artifact@v4
