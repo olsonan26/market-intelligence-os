@@ -1,0 +1,6 @@
+-- PostgreSQL portability notes (ADR-0001):
+-- raw_bytes_b64 TEXT        -> BYTEA (store bytes directly, drop base64)
+-- *_utc TEXT (ISO-8601)     -> TIMESTAMPTZ
+-- INTEGER PRIMARY KEY AUTOINCREMENT -> BIGSERIAL PRIMARY KEY
+-- append-only triggers      -> CREATE RULE / BEFORE UPDATE OR DELETE trigger RAISE EXCEPTION
+-- UNIQUE constraints and semantics identical.

@@ -1,0 +1,148 @@
+{
+  "acceptance_artifact_paths": [
+    "artifacts/acceptance/phase-0/environment.json",
+    "artifacts/acceptance/phase-0/hashes.json",
+    "artifacts/acceptance/phase-0/manifest.json",
+    "artifacts/acceptance/phase-0/schema-contracts.json",
+    "artifacts/acceptance/phase-0/test-results.txt",
+    "artifacts/acceptance/phase-1/environment.json",
+    "artifacts/acceptance/phase-1/hashes.json",
+    "artifacts/acceptance/phase-1/manifest.json",
+    "artifacts/acceptance/phase-1/schema-contracts.json",
+    "artifacts/acceptance/phase-1/test-results.txt",
+    "artifacts/acceptance/phase-10/environment.json",
+    "artifacts/acceptance/phase-10/hashes.json",
+    "artifacts/acceptance/phase-10/manifest.json",
+    "artifacts/acceptance/phase-10/schema-contracts.json",
+    "artifacts/acceptance/phase-10/test-results.txt",
+    "artifacts/acceptance/phase-11/e2e-sealed-scenario.json",
+    "artifacts/acceptance/phase-11/environment.json",
+    "artifacts/acceptance/phase-11/hashes.json",
+    "artifacts/acceptance/phase-11/manifest.json",
+    "artifacts/acceptance/phase-11/schema-contracts.json",
+    "artifacts/acceptance/phase-11/test-results.txt",
+    "artifacts/acceptance/phase-2/environment.json",
+    "artifacts/acceptance/phase-2/final-hashes.json",
+    "artifacts/acceptance/phase-2/hashes.json",
+    "artifacts/acceptance/phase-2/manifest.json",
+    "artifacts/acceptance/phase-2/schema-contracts.json",
+    "artifacts/acceptance/phase-2/snapshot-reproducibility.json",
+    "artifacts/acceptance/phase-2/test-results.txt",
+    "artifacts/acceptance/phase-2/tm-001.json",
+    "artifacts/acceptance/phase-2/tm-002.json",
+    "artifacts/acceptance/phase-2/tm-003.json",
+    "artifacts/acceptance/phase-2/tm-004.json",
+    "artifacts/acceptance/phase-2/tm-005.json",
+    "artifacts/acceptance/phase-2/tm-006.json",
+    "artifacts/acceptance/phase-2/tm-007.json",
+    "artifacts/acceptance/phase-2/visibility-policy-matrix.json",
+    "artifacts/acceptance/phase-3/environment.json",
+    "artifacts/acceptance/phase-3/hashes.json",
+    "artifacts/acceptance/phase-3/manifest.json",
+    "artifacts/acceptance/phase-3/schema-contracts.json",
+    "artifacts/acceptance/phase-3/test-results.txt",
+    "artifacts/acceptance/phase-4/environment.json",
+    "artifacts/acceptance/phase-4/hashes.json",
+    "artifacts/acceptance/phase-4/manifest.json",
+    "artifacts/acceptance/phase-4/schema-contracts.json",
+    "artifacts/acceptance/phase-4/test-results.txt",
+    "artifacts/acceptance/phase-5/environment.json",
+    "artifacts/acceptance/phase-5/hashes.json",
+    "artifacts/acceptance/phase-5/manifest.json",
+    "artifacts/acceptance/phase-5/schema-contracts.json",
+    "artifacts/acceptance/phase-5/test-results.txt",
+    "artifacts/acceptance/phase-6/environment.json",
+    "artifacts/acceptance/phase-6/hashes.json",
+    "artifacts/acceptance/phase-6/manifest.json",
+    "artifacts/acceptance/phase-6/schema-contracts.json",
+    "artifacts/acceptance/phase-6/test-results.txt",
+    "artifacts/acceptance/phase-7/environment.json",
+    "artifacts/acceptance/phase-7/hashes.json",
+    "artifacts/acceptance/phase-7/manifest.json",
+    "artifacts/acceptance/phase-7/schema-contracts.json",
+    "artifacts/acceptance/phase-7/test-results.txt",
+    "artifacts/acceptance/phase-8/environment.json",
+    "artifacts/acceptance/phase-8/hashes.json",
+    "artifacts/acceptance/phase-8/manifest.json",
+    "artifacts/acceptance/phase-8/schema-contracts.json",
+    "artifacts/acceptance/phase-8/test-results.txt",
+    "artifacts/acceptance/phase-9/environment.json",
+    "artifacts/acceptance/phase-9/hashes.json",
+    "artifacts/acceptance/phase-9/manifest.json",
+    "artifacts/acceptance/phase-9/schema-contracts.json",
+    "artifacts/acceptance/phase-9/test-results.txt"
+  ],
+  "adrs": [
+    "ADR-0001-sqlite-substrate",
+    "ADR-0002-stdlib-toolchain",
+    "ADR-0003-simulation-engine"
+  ],
+  "blocked_items": [
+    "GitHub push (connector not connected)"
+  ],
+  "branch": "codex/full-build (LOCAL ONLY - GitHub push blocked: connector not connected)",
+  "build_id": "mios-full-build-2026-08-27",
+  "current_phase": 11,
+  "current_ticket": "release-candidate-non-live",
+  "external_verifications_pending": [
+    {
+      "item": "GitHub writeback",
+      "needs": "Connect the GitHub account in SuperCool (chat menu -> Connect) so branch codex/full-build can be created and pushed",
+      "state": "BLOCKED"
+    },
+    {
+      "item": "PostgreSQL substrate",
+      "needs": "environment with PostgreSQL to run portable DDL",
+      "state": "ADR-0001 SQLite substitute"
+    },
+    {
+      "item": "NautilusTrader vs LEAN bake-off (SIM-008)",
+      "needs": "environment with pip network access + dotnet/LEAN CLI",
+      "state": "ENTITLEMENT_PENDING"
+    },
+    {
+      "item": "Real market-data provider capture (Phase 1)",
+      "needs": "licensed provider credentials supplied at runtime, never committed",
+      "state": "FIXTURE_VERIFIED_REAL_CAPTURE_PENDING"
+    },
+    {
+      "item": "Real ALFRED/SEC/COT/news feeds (Phase 5)",
+      "needs": "provider entitlements",
+      "state": "FIXTURE_VERIFIED"
+    },
+    {
+      "item": "IBKR/OANDA/Kraken paper-sandbox (Phase 8)",
+      "needs": "paper/sandbox accounts and credentials from Alex",
+      "state": "ENTITLEMENT_PENDING"
+    },
+    {
+      "item": "Real-time shadow feed (Phase 9)",
+      "needs": "live read-only data feed entitlement",
+      "state": "FIXTURE_VERIFIED"
+    }
+  ],
+  "head_commit": "UNPUSHED-LOCAL-BUILD",
+  "known_limitations": [
+    "All acceptance evidence is fixture-mode; no claim of sandbox/paper/shadow/production verification is made",
+    "Sandbox toolchain is stdlib (ADR-0002); CI config included for full toolchain environments",
+    "Repository is public by owner authorization; preflight confirms no secrets/licensed payloads/live paths"
+  ],
+  "last_passing_gate": "phase-11",
+  "master_plan_version": "1.0",
+  "next_permitted_action": "Alex connects GitHub; then push codex/full-build, open draft PR, re-run all gates in CI",
+  "phase_statuses": {
+    "phase0": "PASSED",
+    "phase1": "FIXTURE_VERIFIED_REAL_CAPTURE_PENDING",
+    "phase10": "PASSED",
+    "phase11": "PASSED_NON_LIVE_RC",
+    "phase2": "PASSED",
+    "phase3": "PASSED_SIM008_BAKEOFF_ENTITLEMENT_PENDING",
+    "phase4": "PASSED",
+    "phase5": "FIXTURE_VERIFIED_EXTERNAL_VERIFICATION_PENDING",
+    "phase6": "PASSED",
+    "phase7": "PASSED",
+    "phase8": "FIXTURE_VERIFIED_SANDBOX_PENDING",
+    "phase9": "FIXTURE_VERIFIED"
+  },
+  "updated_at": "2026-08-27T11:35:40.175210+00:00"
+}
