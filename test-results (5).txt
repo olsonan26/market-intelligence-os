@@ -1,0 +1,25 @@
+test_metric_requires_lineage (tests.test_phase10_audit.UI001_DeepLinks.test_metric_requires_lineage) ... ok
+test_hash_stable (tests.test_phase10_audit.UI002_DisplayCannotMutate.test_hash_stable) ... ok
+test_projection_read_only (tests.test_phase10_audit.UI002_DisplayCannotMutate.test_projection_read_only) ... ok
+test_viewer_blocked (tests.test_phase10_audit.UI003_RoleRestrictions.test_viewer_blocked) ... ok
+test_badges_mandatory_and_distinct (tests.test_phase10_audit.UI004_SourceStatesUnconfusable.test_badges_mandatory_and_distinct) ... ok
+test_unknown_state_rejected (tests.test_phase10_audit.UI004_SourceStatesUnconfusable.test_unknown_state_rejected) ... ok
+test_backup_reproduces_state (tests.test_phase11_hardening.DR001_BackupRestore.test_backup_reproduces_state) ... ok
+test_corrupt_raw_detected (tests.test_phase11_hardening.DR002_CorruptionQuarantine.test_corrupt_raw_detected) ... ok
+test_prohibited_data_cannot_reach_display_or_export (tests.test_phase11_hardening.LC001_LicensePathsBlocked.test_prohibited_data_cannot_reach_display_or_export) ... ok
+test_benign_config_passes (tests.test_phase11_hardening.LIVE000_NoLiveRoute.test_benign_config_passes) ... ok
+test_no_broker_sdks_importable_in_tree (tests.test_phase11_hardening.LIVE000_NoLiveRoute.test_no_broker_sdks_importable_in_tree) ... ok
+test_no_config_flag_enables_live (tests.test_phase11_hardening.LIVE000_NoLiveRoute.test_no_config_flag_enables_live) ... ok
+test_update_and_delete_rejected (tests.test_phase1_slice.TestAppendOnly.test_update_and_delete_rejected) ... ok
+test_identical_runs_identical_hashes (tests.test_phase1_slice.TestDeterministicReplay.test_identical_runs_identical_hashes) ... ok
+test_order_independent_of_arrival_shuffle (tests.test_phase1_slice.TestDeterministicReplay.test_order_independent_of_arrival_shuffle) ... ok
+test_duplicate_bytes_become_incident_not_second_event (tests.test_phase1_slice.TestDuplicates.test_duplicate_bytes_become_incident_not_second_event) ... ok
+test_sequence_gap_recorded (tests.test_phase1_slice.TestGaps.test_sequence_gap_recorded) ... ok
+test_capture_normalize_replay (tests.test_phase1_slice.TestHappyPath.test_capture_normalize_replay) ... ok
+test_every_event_labeled_fixture (tests.test_phase1_slice.TestHappyPath.test_every_event_labeled_fixture) ... ok
+test_invalid_bytes_stored_raw_and_rejected (tests.test_phase1_slice.TestRejectedPayloads.test_invalid_bytes_stored_raw_and_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.047s
+
+OK

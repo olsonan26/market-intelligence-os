@@ -1,0 +1,11 @@
+test_metric_requires_lineage (tests.test_phase10_audit.UI001_DeepLinks.test_metric_requires_lineage) ... ok
+test_hash_stable (tests.test_phase10_audit.UI002_DisplayCannotMutate.test_hash_stable) ... ok
+test_projection_read_only (tests.test_phase10_audit.UI002_DisplayCannotMutate.test_projection_read_only) ... ok
+test_viewer_blocked (tests.test_phase10_audit.UI003_RoleRestrictions.test_viewer_blocked) ... ok
+test_badges_mandatory_and_distinct (tests.test_phase10_audit.UI004_SourceStatesUnconfusable.test_badges_mandatory_and_distinct) ... ok
+test_unknown_state_rejected (tests.test_phase10_audit.UI004_SourceStatesUnconfusable.test_unknown_state_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK

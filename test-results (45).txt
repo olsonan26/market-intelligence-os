@@ -1,0 +1,17 @@
+test_every_friction_configured (tests.test_phase7_risk.EV001_AllFrictionsIncluded.test_every_friction_configured) ... ok
+test_flip_to_no_trade (tests.test_phase7_risk.EV002_PositiveRawNegativeNet.test_flip_to_no_trade) ... ok
+test_insufficient_calibration_no_intent (tests.test_phase7_risk.NT001_AbstentionGate.test_insufficient_calibration_no_intent) ... ok
+test_bins_within_tolerance (tests.test_phase7_risk.PR001_BinsMatchReality.test_bins_within_tolerance) ... ok
+test_display_carries_evidence (tests.test_phase7_risk.PR002_SampleSizeAndUncertainty.test_display_carries_evidence) ... ok
+test_sparse_bin_abstains (tests.test_phase7_risk.PR002_SampleSizeAndUncertainty.test_sparse_bin_abstains) ... ok
+test_shift_triggers_recalibration (tests.test_phase7_risk.PR003_DriftPolicy.test_shift_triggers_recalibration) ... ok
+test_stale_blocks_entries_not_exits (tests.test_phase7_risk.RS001_Staleness.test_stale_blocks_entries_not_exits) ... ok
+test_correlated_signals_capped (tests.test_phase7_risk.RS002_Concentration.test_correlated_signals_capped) ... ok
+test_margin_breach_rejected (tests.test_phase7_risk.RS003_Margin.test_margin_breach_rejected) ... ok
+test_decision_reproducible (tests.test_phase7_risk.RS004_KillSwitches.test_decision_reproducible) ... ok
+test_deterministic_authenticated_logged (tests.test_phase7_risk.RS004_KillSwitches.test_deterministic_authenticated_logged) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.003s
+
+OK

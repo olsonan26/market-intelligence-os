@@ -1,0 +1,13 @@
+test_engine_consumes_ordered_canonical_shaped_events (tests.test_phase3_simulation.SIM001_IdenticalInputs.test_engine_consumes_ordered_canonical_shaped_events) ... ok
+test_repeated_runs_identical_hashes (tests.test_phase3_simulation.SIM002_Determinism.test_repeated_runs_identical_hashes) ... ok
+test_latency_delays_fill (tests.test_phase3_simulation.SIM003_LatencyPartialFills.test_latency_delays_fill) ... ok
+test_partial_fill_then_remainder (tests.test_phase3_simulation.SIM003_LatencyPartialFills.test_partial_fill_then_remainder) ... ok
+test_higher_frictions_lower_equity (tests.test_phase3_simulation.SIM004_FrictionsMatter.test_higher_frictions_lower_equity) ... ok
+test_future_knowledge_not_consumed (tests.test_phase3_simulation.SIM006_KnowledgeTime.test_future_knowledge_not_consumed) ... ok
+test_checkpoint_reproduces_uninterrupted_run (tests.test_phase3_simulation.SIM007_CheckpointRestart.test_checkpoint_reproduces_uninterrupted_run) ... ok
+test_external_engines_cannot_silently_run (tests.test_phase3_simulation.SIM008_ExternalEnginesHonest.test_external_engines_cannot_silently_run) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.001s
+
+OK

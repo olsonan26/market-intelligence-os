@@ -1,0 +1,55 @@
+{
+  "12:30|public_knowable": [
+    "evt-Av1",
+    "evt-Cv1",
+    "evt-Dv1"
+  ],
+  "12:30|system_received": [
+    "evt-Av1"
+  ],
+  "14:00|public_knowable": [
+    "evt-Av1",
+    "evt-Av2",
+    "evt-Bv1",
+    "evt-Cv1",
+    "evt-Dv1"
+  ],
+  "14:00|system_received": [
+    "evt-Av1",
+    "evt-Bv1",
+    "evt-Dv1"
+  ],
+  "15:05|public_knowable": [
+    "evt-Av1",
+    "evt-Av2",
+    "evt-Bv1",
+    "evt-Bv2",
+    "evt-Cv1",
+    "evt-Dv1"
+  ],
+  "15:05|system_received": [
+    "evt-Av1",
+    "evt-Av2",
+    "evt-Bv1",
+    "evt-Bv2",
+    "evt-Dv1"
+  ],
+  "18:30|public_knowable": [
+    "evt-Av1",
+    "evt-Av2",
+    "evt-Av3",
+    "evt-Bv1",
+    "evt-Bv2",
+    "evt-Cv1",
+    "evt-Dv1"
+  ],
+  "18:30|system_received": [
+    "evt-Av1",
+    "evt-Av2",
+    "evt-Av3",
+    "evt-Bv1",
+    "evt-Bv2",
+    "evt-Cv1",
+    "evt-Dv1"
+  ]
+}

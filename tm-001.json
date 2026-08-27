@@ -1,0 +1,90 @@
+{
+  "acceptance_test_id": "TM-001",
+  "cutoff": "2026-01-05T12:00:00+00:00",
+  "decisions": [
+    {
+      "cutoff": "2026-01-05T12:00:00+00:00",
+      "event_id": "evt-A",
+      "governing_clock": "ingested_at",
+      "governing_value": "2026-01-05T12:06:00+00:00",
+      "policy": "system_received",
+      "reason": "ingested_at=2026-01-05T12:06:00+00:00 > cutoff 2026-01-05T12:00:00+00:00 under policy system_received: knowledge did not exist yet",
+      "retracted_by_visible_retraction": false,
+      "version": 1,
+      "visible": false
+    },
+    {
+      "cutoff": "2026-01-05T12:00:00+00:00",
+      "event_id": "evt-A",
+      "governing_clock": "ingested_at",
+      "governing_value": "2026-01-05T14:01:00+00:00",
+      "policy": "system_received",
+      "reason": "ingested_at=2026-01-05T14:01:00+00:00 > cutoff 2026-01-05T12:00:00+00:00 under policy system_received: knowledge did not exist yet",
+      "retracted_by_visible_retraction": false,
+      "version": 2,
+      "visible": false
+    },
+    {
+      "cutoff": "2026-01-05T12:00:00+00:00",
+      "event_id": "evt-A",
+      "governing_clock": "ingested_at",
+      "governing_value": "2026-01-05T16:01:00+00:00",
+      "policy": "system_received",
+      "reason": "ingested_at=2026-01-05T16:01:00+00:00 > cutoff 2026-01-05T12:00:00+00:00 under policy system_received: knowledge did not exist yet",
+      "retracted_by_visible_retraction": false,
+      "version": 3,
+      "visible": false
+    },
+    {
+      "cutoff": "2026-01-05T12:00:00+00:00",
+      "event_id": "evt-B",
+      "governing_clock": "ingested_at",
+      "governing_value": "2026-01-05T13:02:00+00:00",
+      "policy": "system_received",
+      "reason": "ingested_at=2026-01-05T13:02:00+00:00 > cutoff 2026-01-05T12:00:00+00:00 under policy system_received: knowledge did not exist yet",
+      "retracted_by_visible_retraction": false,
+      "version": 1,
+      "visible": false
+    },
+    {
+      "cutoff": "2026-01-05T12:00:00+00:00",
+      "event_id": "evt-B",
+      "governing_clock": "ingested_at",
+      "governing_value": "2026-01-05T15:02:00+00:00",
+      "policy": "system_received",
+      "reason": "ingested_at=2026-01-05T15:02:00+00:00 > cutoff 2026-01-05T12:00:00+00:00 under policy system_received: knowledge did not exist yet",
+      "retracted_by_visible_retraction": false,
+      "version": 2,
+      "visible": false
+    },
+    {
+      "cutoff": "2026-01-05T12:00:00+00:00",
+      "event_id": "evt-C",
+      "governing_clock": "ingested_at",
+      "governing_value": "2026-01-05T18:00:00+00:00",
+      "policy": "system_received",
+      "reason": "ingested_at=2026-01-05T18:00:00+00:00 > cutoff 2026-01-05T12:00:00+00:00 under policy system_received: knowledge did not exist yet",
+      "retracted_by_visible_retraction": false,
+      "version": 1,
+      "visible": false
+    },
+    {
+      "cutoff": "2026-01-05T12:00:00+00:00",
+      "event_id": "evt-D",
+      "governing_clock": "ingested_at",
+      "governing_value": "2026-01-05T13:00:00+00:00",
+      "policy": "system_received",
+      "reason": "ingested_at=2026-01-05T13:00:00+00:00 > cutoff 2026-01-05T12:00:00+00:00 under policy system_received: knowledge did not exist yet",
+      "retracted_by_visible_retraction": false,
+      "version": 1,
+      "visible": false
+    }
+  ],
+  "generated_at": "2026-08-27T11:35:44.742792+00:00",
+  "phase": 2,
+  "policy": "system_received",
+  "snapshot_hash": "d74bafe2ad9e3f6636ab501c7ae9089a961a46d55c83c6ed8fe7d74a0562ce6e",
+  "status": "PASSED",
+  "title": "cutoff excludes future knowledge",
+  "visible_events": []
+}

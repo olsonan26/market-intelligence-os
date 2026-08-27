@@ -1,0 +1,11 @@
+{
+  "mios.canonical_event": "1.0.0",
+  "mios.clocks": "1.0.0",
+  "mios.evidence_root": "1.0.0",
+  "mios.instrument": "1.0.0",
+  "mios.license_policy": "1.0.0",
+  "mios.provenance_edge": "1.0.0",
+  "mios.raw_capture": "1.0.0",
+  "mios.source_ref": "1.0.0",
+  "mios.timestamp": "1.0.0"
+}

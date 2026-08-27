@@ -1,0 +1,11 @@
+test_partial_fill_restart (tests.test_phase8_execution.EX001_RestartReconstruction.test_partial_fill_restart) ... ok
+test_unsupported_oco_rejected (tests.test_phase8_execution.EX002_NoSilentOCOEmulation.test_unsupported_oco_rejected) ... ok
+test_same_key_no_duplicate (tests.test_phase8_execution.EX003_Idempotency.test_same_key_no_duplicate) ... ok
+test_disconnect_snapshot_reconciles (tests.test_phase8_execution.EX004_SnapshotReconciliation.test_disconnect_snapshot_reconciles) ... ok
+test_mismatch_detected (tests.test_phase8_execution.EX004_SnapshotReconciliation.test_mismatch_detected) ... ok
+test_external_venues_entitlement_pending (tests.test_phase8_execution.NoLiveBrokerAccess.test_external_venues_entitlement_pending) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK

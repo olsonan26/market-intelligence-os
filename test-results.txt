@@ -1,0 +1,24 @@
+test_decimal_serializes_exactly (tests.test_phase0_contracts.TestDecimalDeterminism.test_decimal_serializes_exactly) ... ok
+test_different_payloads_different_hashes (tests.test_phase0_contracts.TestDecimalDeterminism.test_different_payloads_different_hashes) ... ok
+test_identical_serializations_identical_hashes (tests.test_phase0_contracts.TestDecimalDeterminism.test_identical_serializations_identical_hashes) ... ok
+test_repeated_runs_byte_identical (tests.test_phase0_contracts.TestDeterministicClock.test_repeated_runs_byte_identical) ... ok
+test_event_requires_evidence_root (tests.test_phase0_contracts.TestEventContractGuards.test_event_requires_evidence_root) ... ok
+test_event_requires_raw_hash (tests.test_phase0_contracts.TestEventContractGuards.test_event_requires_raw_hash) ... ok
+test_fabricated_ingest_time_rejected (tests.test_phase0_contracts.TestKnowledgeTimeNeverFabricated.test_fabricated_ingest_time_rejected) ... ok
+test_missing_policy_allows_test_fixture (tests.test_phase0_contracts.TestLicenseEnforcement.test_missing_policy_allows_test_fixture) ... ok
+test_missing_policy_denies_non_test_use (tests.test_phase0_contracts.TestLicenseEnforcement.test_missing_policy_denies_non_test_use) ... ok
+test_prohibited_redistribution_rejected (tests.test_phase0_contracts.TestLicenseEnforcement.test_prohibited_redistribution_rejected) ... ok
+test_naive_rejected (tests.test_phase0_contracts.TestNaiveDatetimeRejected.test_naive_rejected) ... ok
+test_naive_rejected_in_canonical_json (tests.test_phase0_contracts.TestNaiveDatetimeRejected.test_naive_rejected_in_canonical_json) ... ok
+test_import_exposes_no_live_order (tests.test_phase0_contracts.TestNoLiveOrderExposure.test_import_exposes_no_live_order) ... ok
+test_tree_scan_clean (tests.test_phase0_contracts.TestNoLiveOrderExposure.test_tree_scan_clean) ... ok
+test_millisecond_source_cannot_carry_microseconds (tests.test_phase0_contracts.TestPrecisionNotInvented.test_millisecond_source_cannot_carry_microseconds) ... ok
+test_second_source_cannot_carry_subsecond (tests.test_phase0_contracts.TestPrecisionNotInvented.test_second_source_cannot_carry_subsecond) ... ok
+test_valid_millisecond (tests.test_phase0_contracts.TestPrecisionNotInvented.test_valid_millisecond) ... ok
+test_mismatch_fails_explicitly (tests.test_phase0_contracts.TestSchemaVersioning.test_mismatch_fails_explicitly) ... ok
+test_utc_conversion_preserves_raw_text_and_tz (tests.test_phase0_contracts.TestUTCPreservesSource.test_utc_conversion_preserves_raw_text_and_tz) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.017s
+
+OK

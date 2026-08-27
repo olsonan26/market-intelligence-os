@@ -1,0 +1,17 @@
+{
+  "acceptance_test_id": "preflight",
+  "checked_at": "2026-08-27T11:35:40.175210+00:00",
+  "default_branch_protected": false,
+  "environment_constraints": [
+    "GitHub connector not connected: push-capability check FAILED; work delivered as ZIP per owner instruction",
+    "No PostgreSQL/Docker/pip-network: ADR-0001/0002 substitutions recorded"
+  ],
+  "inherited_trading_bot_code": "none \u2014 repository contained only the two specification documents",
+  "live_brokerage_credentials": "none present; broker SDK imports forbidden and scanned",
+  "live_order_path": "none; runtime + static guards enforce absence",
+  "paid_data_credentials": "none present",
+  "pr_workflow": "one draft PR 'Full Build: Market Intelligence OS Phases 0-11' from codex/full-build into main (pending GitHub connection)",
+  "repository_visibility": "PUBLIC \u2014 explicitly authorized by owner while repo contains no secrets, credentials, licensed raw payloads, private brokerage info, proprietary datasets, personal information, or live-trading functionality. Enforced by secret scan + live-authority scan on every phase gate.",
+  "secret_scan": "clean (regex+entropy scanner, run per phase)",
+  "status": "PASSED_WITH_RECORDED_BOUNDARIES"
+}

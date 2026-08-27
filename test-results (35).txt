@@ -1,0 +1,14 @@
+test_correction_hidden_before_clock (tests.test_phase5_newsmacro.NEWS001_CorrectionInvisibleEarly.test_correction_hidden_before_clock) ... ok
+test_pre_retraction_view_still_reconstructable (tests.test_phase5_newsmacro.NEWS002_RetractionPreservesHistory.test_pre_retraction_view_still_reconstructable) ... ok
+test_five_reports_one_root (tests.test_phase5_newsmacro.NEWS003_OneIndependentRoot.test_five_reports_one_root) ... ok
+test_dissemination_governs (tests.test_phase5_newsmacro.NEWS004_FilingClocks.test_dissemination_governs) ... ok
+test_vintage_resolution (tests.test_phase5_newsmacro.NEWS005_MacroVintages.test_vintage_resolution) ... ok
+test_tuesday_invisible_before_friday (tests.test_phase5_newsmacro.NEWS006_COTLag.test_tuesday_invisible_before_friday) ... ok
+test_archive_publication_not_receipt (tests.test_phase5_newsmacro.NEWS007_NoFabricatedReceipt.test_archive_publication_not_receipt) ... ok
+test_versioned_and_auditable (tests.test_phase5_newsmacro.NEWS008_EntityMappingVersioned.test_versioned_and_auditable) ... ok
+test_prohibited_display_blocked (tests.test_phase5_newsmacro.NEWS009_LicenseBlocksBodyUse.test_prohibited_display_blocked) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.008s
+
+OK

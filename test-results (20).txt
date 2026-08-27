@@ -1,0 +1,16 @@
+test_cutoff_before_everything (tests.test_phase2_timemachine.TM001_CutoffExcludesFuture.test_cutoff_before_everything) ... ok
+test_midday_cutoff_sees_only_v1 (tests.test_phase2_timemachine.TM001_CutoffExcludesFuture.test_midday_cutoff_sees_only_v1) ... ok
+test_progression (tests.test_phase2_timemachine.TM002_RevisionsAndCorrections.test_progression) ... ok
+test_after_retraction (tests.test_phase2_timemachine.TM003_Retraction.test_after_retraction) ... ok
+test_before_retraction (tests.test_phase2_timemachine.TM003_Retraction.test_before_retraction) ... ok
+test_policies_disagree (tests.test_phase2_timemachine.TM004_LateArrival.test_policies_disagree) ... ok
+test_backfill (tests.test_phase2_timemachine.TM005_ArchiveBackfill.test_backfill) ... ok
+test_stable_after_new_data (tests.test_phase2_timemachine.TM006_SnapshotStability.test_stable_after_new_data) ... ok
+test_every_decision_explained (tests.test_phase2_timemachine.TM007_ExplanationsAndReproducibility.test_every_decision_explained) ... ok
+test_identical_snapshots_identical_hashes (tests.test_phase2_timemachine.TM007_ExplanationsAndReproducibility.test_identical_snapshots_identical_hashes) ... ok
+test_trace_to_immutable_bytes (tests.test_phase2_timemachine.TM007_ExplanationsAndReproducibility.test_trace_to_immutable_bytes) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.033s
+
+OK

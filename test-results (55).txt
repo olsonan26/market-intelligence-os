@@ -1,0 +1,11 @@
+test_no_broker_attachable (tests.test_phase9_shadow.SH001_ZeroOrderAuthority.test_no_broker_attachable) ... ok
+test_no_submit_method_exists (tests.test_phase9_shadow.SH001_ZeroOrderAuthority.test_no_submit_method_exists) ... ok
+test_every_decision_has_lineage (tests.test_phase9_shadow.SH002_LineageReconstruction.test_every_decision_has_lineage) ... ok
+test_stale_gap_produces_no_trade (tests.test_phase9_shadow.SH003_StaleHalts.test_stale_gap_produces_no_trade) ... ok
+test_catchup_skips_seen_events (tests.test_phase9_shadow.SH004_RestartNoDuplicates.test_catchup_skips_seen_events) ... ok
+test_duplicate_events_after_reconnect (tests.test_phase9_shadow.SH005_ProviderReconnectRecovery.test_duplicate_events_after_reconnect) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK

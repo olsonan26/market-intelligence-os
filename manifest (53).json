@@ -1,0 +1,41 @@
+{
+  "acceptance_test_id": "phase-9-gate",
+  "code_commit": "UNPUSHED-LOCAL-BUILD",
+  "completed_at": "2026-08-27T11:35:43.848969+00:00",
+  "configuration_hash": "29485505e9f0516d3c69050f6912f8e0fb7a998fd52e281f3542c6945287a1cd",
+  "environment_hash": "fa79459b91258399eae32cf4798aab289ef544c601c90a6254c020a0ec906f8a",
+  "failure_reason": null,
+  "lint": {
+    "clean": true,
+    "violations": []
+  },
+  "live_authority_scan": {
+    "clean": true,
+    "finding_count": 0
+  },
+  "phase": 9,
+  "schema_versions": {
+    "mios.canonical_event": "1.0.0",
+    "mios.clocks": "1.0.0",
+    "mios.evidence_root": "1.0.0",
+    "mios.instrument": "1.0.0",
+    "mios.license_policy": "1.0.0",
+    "mios.provenance_edge": "1.0.0",
+    "mios.raw_capture": "1.0.0",
+    "mios.source_ref": "1.0.0",
+    "mios.timestamp": "1.0.0"
+  },
+  "secret_scan": {
+    "clean": true,
+    "finding_count": 0
+  },
+  "started_at": "2026-08-27T11:35:43.682655+00:00",
+  "status": "PASSED",
+  "tests": {
+    "clean": true,
+    "errors": [],
+    "failures": [],
+    "run": 6
+  },
+  "working_tree_state": "clean-local"
+}

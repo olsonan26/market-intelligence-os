@@ -1,0 +1,103 @@
+{
+  "acceptance_test_id": "TM-004",
+  "cutoff": "2026-01-05T14:00:00+00:00",
+  "decisions": [
+    {
+      "cutoff": "2026-01-05T14:00:00+00:00",
+      "event_id": "evt-A",
+      "governing_clock": "ingested_at",
+      "governing_value": "2026-01-05T12:06:00+00:00",
+      "policy": "system_received",
+      "reason": "ingested_at=2026-01-05T12:06:00+00:00 <= cutoff 2026-01-05T14:00:00+00:00 under policy system_received",
+      "retracted_by_visible_retraction": false,
+      "version": 1,
+      "visible": true
+    },
+    {
+      "cutoff": "2026-01-05T14:00:00+00:00",
+      "event_id": "evt-A",
+      "governing_clock": "ingested_at",
+      "governing_value": "2026-01-05T14:01:00+00:00",
+      "policy": "system_received",
+      "reason": "ingested_at=2026-01-05T14:01:00+00:00 > cutoff 2026-01-05T14:00:00+00:00 under policy system_received: knowledge did not exist yet",
+      "retracted_by_visible_retraction": false,
+      "version": 2,
+      "visible": false
+    },
+    {
+      "cutoff": "2026-01-05T14:00:00+00:00",
+      "event_id": "evt-A",
+      "governing_clock": "ingested_at",
+      "governing_value": "2026-01-05T16:01:00+00:00",
+      "policy": "system_received",
+      "reason": "ingested_at=2026-01-05T16:01:00+00:00 > cutoff 2026-01-05T14:00:00+00:00 under policy system_received: knowledge did not exist yet",
+      "retracted_by_visible_retraction": false,
+      "version": 3,
+      "visible": false
+    },
+    {
+      "cutoff": "2026-01-05T14:00:00+00:00",
+      "event_id": "evt-B",
+      "governing_clock": "ingested_at",
+      "governing_value": "2026-01-05T13:02:00+00:00",
+      "policy": "system_received",
+      "reason": "ingested_at=2026-01-05T13:02:00+00:00 <= cutoff 2026-01-05T14:00:00+00:00 under policy system_received",
+      "retracted_by_visible_retraction": false,
+      "version": 1,
+      "visible": true
+    },
+    {
+      "cutoff": "2026-01-05T14:00:00+00:00",
+      "event_id": "evt-B",
+      "governing_clock": "ingested_at",
+      "governing_value": "2026-01-05T15:02:00+00:00",
+      "policy": "system_received",
+      "reason": "ingested_at=2026-01-05T15:02:00+00:00 > cutoff 2026-01-05T14:00:00+00:00 under policy system_received: knowledge did not exist yet",
+      "retracted_by_visible_retraction": false,
+      "version": 2,
+      "visible": false
+    },
+    {
+      "cutoff": "2026-01-05T14:00:00+00:00",
+      "event_id": "evt-C",
+      "governing_clock": "ingested_at",
+      "governing_value": "2026-01-05T18:00:00+00:00",
+      "policy": "system_received",
+      "reason": "ingested_at=2026-01-05T18:00:00+00:00 > cutoff 2026-01-05T14:00:00+00:00 under policy system_received: knowledge did not exist yet",
+      "retracted_by_visible_retraction": false,
+      "version": 1,
+      "visible": false
+    },
+    {
+      "cutoff": "2026-01-05T14:00:00+00:00",
+      "event_id": "evt-D",
+      "governing_clock": "ingested_at",
+      "governing_value": "2026-01-05T13:00:00+00:00",
+      "policy": "system_received",
+      "reason": "ingested_at=2026-01-05T13:00:00+00:00 <= cutoff 2026-01-05T14:00:00+00:00 under policy system_received",
+      "retracted_by_visible_retraction": false,
+      "version": 1,
+      "visible": true
+    }
+  ],
+  "generated_at": "2026-08-27T11:35:44.742792+00:00",
+  "phase": 2,
+  "policy": "system_received",
+  "snapshot_hash": "e2d077fb624ea58d658b92b12d0d96b50b7a0a0bfb53ebbae1f60ba50fddbf3a",
+  "status": "PASSED",
+  "title": "late arrival separates public vs received",
+  "visible_events": [
+    [
+      "evt-A",
+      1
+    ],
+    [
+      "evt-D",
+      1
+    ],
+    [
+      "evt-B",
+      1
+    ]
+  ]
+}

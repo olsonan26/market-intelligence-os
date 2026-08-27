@@ -1,0 +1,12 @@
+test_llm_cannot_approve_risk_or_size (tests.test_phase6_memory.LLMBoundary.test_llm_cannot_approve_risk_or_size) ... ok
+test_llm_cannot_invent_numbers (tests.test_phase6_memory.LLMBoundary.test_llm_cannot_invent_numbers) ... ok
+test_unvalidated_llm_text_rejected (tests.test_phase6_memory.MEM001_UnvalidatedBlocked.test_unvalidated_llm_text_rejected) ... ok
+test_validated_admitted (tests.test_phase6_memory.MEM001_UnvalidatedBlocked.test_validated_admitted) ... ok
+test_future_memory_invisible_early (tests.test_phase6_memory.MEM002_TemporalValidity.test_future_memory_invisible_early) ... ok
+test_four_conclusions_one_root (tests.test_phase6_memory.MEM003_IndependenceNotInflated.test_four_conclusions_one_root) ... ok
+test_failures_remain (tests.test_phase6_memory.MEM004_GraveyardQueryable.test_failures_remain) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.001s
+
+OK

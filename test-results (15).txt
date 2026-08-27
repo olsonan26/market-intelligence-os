@@ -1,0 +1,11 @@
+test_backup_reproduces_state (tests.test_phase11_hardening.DR001_BackupRestore.test_backup_reproduces_state) ... ok
+test_corrupt_raw_detected (tests.test_phase11_hardening.DR002_CorruptionQuarantine.test_corrupt_raw_detected) ... ok
+test_prohibited_data_cannot_reach_display_or_export (tests.test_phase11_hardening.LC001_LicensePathsBlocked.test_prohibited_data_cannot_reach_display_or_export) ... ok
+test_benign_config_passes (tests.test_phase11_hardening.LIVE000_NoLiveRoute.test_benign_config_passes) ... ok
+test_no_broker_sdks_importable_in_tree (tests.test_phase11_hardening.LIVE000_NoLiveRoute.test_no_broker_sdks_importable_in_tree) ... ok
+test_no_config_flag_enables_live (tests.test_phase11_hardening.LIVE000_NoLiveRoute.test_no_config_flag_enables_live) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.022s
+
+OK

@@ -1,0 +1,148 @@
+{
+  "chain": {
+    "10_trade_intent": {
+      "action": "approve",
+      "reason": "all gates passed",
+      "trade_intent": {
+        "intent_id": "i-good",
+        "venue_neutral": true
+      }
+    },
+    "11_execution": {
+      "order_status": "partially_filled",
+      "reconciled": true,
+      "restart_hash_equal": true
+    },
+    "12_shadow": {
+      "decisions": 4,
+      "no_order_methods": true,
+      "sample_lineage": "5b7064b1afa577321cc1905a73e4716c6e917315913f90f8a48051dca6cd3d01"
+    },
+    "13_audit": {
+      "canonical_hash": "6ba464d9c26deec8a90e057288119b571af8501ba1a69ca0b2c38f08afcf2582",
+      "rendered_badge": "FIXTURE"
+    },
+    "1_market_stream": {
+      "duplicates": 1,
+      "gaps": [
+        {
+          "expected": 2,
+          "got": 4
+        }
+      ],
+      "incident_kinds": [
+        "duplicate",
+        "gap"
+      ],
+      "stored": 5
+    },
+    "2_macro_revisions": {
+      "as_of_apr": "2.3",
+      "as_of_feb": "2.1"
+    },
+    "3_news_versions": {
+      "snapshot_hash": "c8c2f45d9713f5b5947788b4df7d3c85267385e6b63d09836c6966fa27ee5579",
+      "visible": [
+        [
+          "evt-A",
+          1
+        ],
+        [
+          "evt-D",
+          1
+        ],
+        [
+          "evt-B",
+          1
+        ],
+        [
+          "evt-A",
+          2
+        ],
+        [
+          "evt-B",
+          2
+        ],
+        [
+          "evt-C",
+          1
+        ]
+      ]
+    },
+    "4_provenance_dedup": {
+      "independent_root_count": 1,
+      "observation_count": 5,
+      "observations": [
+        "o0",
+        "o1",
+        "o2",
+        "o3",
+        "o4"
+      ],
+      "roots": [
+        "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+      ]
+    },
+    "5_feature_set": {
+      "features": [
+        {
+          "as_of": "2026-01-05T16:00:00+00:00",
+          "inputs": [
+            [
+              "evt-D",
+              1
+            ],
+            [
+              "evt-B",
+              1
+            ],
+            [
+              "evt-A",
+              2
+            ]
+          ],
+          "name": "mean_price",
+          "value": "30.0000"
+        }
+      ],
+      "hash": "abddd2ac3465d41ae193f61f6721642747e5ffa63b8be8df3bd737bbd561f9e4"
+    },
+    "6_experiments": {
+      "baseline": "ELIGIBLE",
+      "leaky": "REJECTED_LEAK"
+    },
+    "7_calibration": {
+      "abstain": false,
+      "display": 0.7,
+      "raw_confidence_never_displayed": true,
+      "sample_size": 40,
+      "uncertainty": 0.0725
+    },
+    "8_net_ev": {
+      "friction_total": "2.0",
+      "frictions": {
+        "fees": "0.3",
+        "funding": "0.1",
+        "latency_cost": "0.1",
+        "margin_cost": "0.2",
+        "market_impact": "0.3",
+        "partial_fill_cost": "0.1",
+        "slippage": "0.4",
+        "spread": "0.5"
+      },
+      "net_ev": "-1.1500",
+      "raw_ev": "0.8500"
+    },
+    "9_stale_no_trade": {
+      "action": "no_trade",
+      "reason": "net expected value non-positive (EV-002)"
+    },
+    "dr": {
+      "clean": true,
+      "quarantined": []
+    },
+    "dr_corruption_detected": true,
+    "live_000": "no configuration can enable live authority"
+  },
+  "scenario_hash": "8a29b2c63161ebd5b5852d3fb54793f0db6a0bd5f0aa42cd73aa5b8dddc6050e"
+}

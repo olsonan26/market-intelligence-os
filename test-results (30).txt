@@ -1,0 +1,16 @@
+test_leaky_experiment_rejected (tests.test_phase4_research.VAL001_FutureLeakRejected.test_leaky_experiment_rejected) ... ok
+test_leaky_feature_raises (tests.test_phase4_research.VAL001_FutureLeakRejected.test_leaky_feature_raises) ... ok
+test_purge_gap_removes_overlap (tests.test_phase4_research.VAL002_PurgedSplits.test_purge_gap_removes_overlap) ... ok
+test_zero_cost_winner_rejected_after_costs (tests.test_phase4_research.VAL003_CostsFlipWinner.test_zero_cost_winner_rejected_after_costs) ... ok
+test_attempts_recorded_and_alpha_adjusted (tests.test_phase4_research.VAL004_RepeatedTestingBounded.test_attempts_recorded_and_alpha_adjusted) ... ok
+test_feature_set_hash_reproducible (tests.test_phase4_research.VAL005_Reproducibility.test_feature_set_hash_reproducible) ... ok
+test_perturbation_rejects (tests.test_phase4_research.VAL006_FragileModelFails.test_perturbation_rejects) ... ok
+test_higher_headline_return_still_not_eligible (tests.test_phase4_research.VAL007_ThresholdsLocked.test_higher_headline_return_still_not_eligible) ... ok
+test_every_feature_traces_inputs (tests.test_phase4_research.VAL008_FeatureProvenance.test_every_feature_traces_inputs) ... ok
+test_insufficient_edge_loses_to_no_trade (tests.test_phase4_research.VAL009_NoTradeWins.test_insufficient_edge_loses_to_no_trade) ... ok
+test_negative_results_retained (tests.test_phase4_research.VAL009_NoTradeWins.test_negative_results_retained) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.012s
+
+OK
