@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">FOX TRADING geometric fox mark</title>
+  <desc id="desc">A compact geometric fox-face emblem designed for the Market Intelligence OS interface.</desc>
+  <defs>
+    <linearGradient id="fox-main" x1="10" y1="8" x2="54" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#67e8f9"/>
+      <stop offset="0.52" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#6366f1"/>
+    </linearGradient>
+    <linearGradient id="fox-inner" x1="20" y1="23" x2="44" y2="48" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e0f2fe"/>
+      <stop offset="1" stop-color="#7dd3fc"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Geometric ears / crown -->
+  <path d="M7 10 24 18 32 14 40 18 57 10 52 33 44 47 32 56 20 47 12 33 7 10Z" fill="url(#fox-main)"/>
+
+  <!-- Faceted cheek planes -->
+  <path d="M12 19 24 26 20 40 12 33 12 19Z" fill="#0ea5e9" fill-opacity=".88"/>
+  <path d="M52 19 40 26 44 40 52 33 52 19Z" fill="#4f46e5" fill-opacity=".72"/>
+  <path d="M24 18 32 14 40 18 36 28 28 28 24 18Z" fill="#bae6fd" fill-opacity=".42"/>
+
+  <!-- Brow / eye mask -->
+  <path d="M18 28 28 30 24 36 16 34 18 28Z" fill="#07111f" fill-opacity=".94"/>
+  <path d="M46 28 36 30 40 36 48 34 46 28Z" fill="#07111f" fill-opacity=".94"/>
+  <path d="M20 31 26 32 23 34 19 33 20 31Z" fill="#e6fbff"/>
+  <path d="M44 31 38 32 41 34 45 33 44 31Z" fill="#e6fbff"/>
+
+  <!-- Muzzle -->
+  <path d="M28 28H36L41 41 32 50 23 41 28 28Z" fill="url(#fox-inner)" fill-opacity=".96"/>
+  <path d="M27 39 32 37 37 39 32 44 27 39Z" fill="#07111f"/>
+  <path d="M32 44 36 47 32 50 28 47 32 44Z" fill="#0f172a" fill-opacity=".9"/>
+
+  <!-- Subtle premium accent -->
+  <path d="M48 18 55 13 52 24 48 18Z" fill="#f59e0b"/>
+</svg>
