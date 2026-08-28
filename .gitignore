@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.env*
+*.sqlite
+.venv/
+data/raw/
+node_modules/
+.next/
+.vercel/
+*.tsbuildinfo
+npm-debug.log*

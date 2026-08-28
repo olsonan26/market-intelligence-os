@@ -23,7 +23,13 @@ def shannon_entropy(s: str) -> float:
 def scan(root: str) -> Dict:
     findings: List[Dict] = []
     for dirpath, dirnames, filenames in os.walk(root):
-        dirnames[:] = [d for d in dirnames if d not in {".git", "__pycache__", "artifacts", ".venv"}]
+        # Scan authored and distributable files, not downloaded dependencies or
+        # generated framework output. Those trees can contain documentation
+        # fixtures that intentionally resemble keys.
+        dirnames[:] = [
+            d for d in dirnames
+            if d not in {".git", "__pycache__", "artifacts", ".venv", "node_modules", ".next", ".vercel"}
+        ]
         for fn in filenames:
             path = os.path.join(dirpath, fn)
             try:

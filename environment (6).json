@@ -1,6 +1,0 @@
-{
-  "captured_at": "2026-08-27T11:35:44.223826+00:00",
-  "platform": "Linux-4.19.0-gvisor-x86_64-with-glibc2.36",
-  "python": "3.12.10 (main, May 21 2025, 23:34:56) [GCC 12.2.0]",
-  "toolchain": "stdlib (ADR-0002)"
-}

@@ -6,6 +6,6 @@ test_badges_mandatory_and_distinct (tests.test_phase10_audit.UI004_SourceStatesU
 test_unknown_state_rejected (tests.test_phase10_audit.UI004_SourceStatesUnconfusable.test_unknown_state_rejected) ... ok
 
 ----------------------------------------------------------------------
-Ran 6 tests in 0.001s
+Ran 6 tests in 0.000s
 
 OK
