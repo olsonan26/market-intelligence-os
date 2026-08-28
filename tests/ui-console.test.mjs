@@ -50,9 +50,10 @@ test("deployment is explicitly configured for Next.js", async () => {
 });
 
 test("FOX TRADING branding is present and uses a production image asset", async () => {
-  const [consoleSource, layout, logo, appIcon] = await Promise.all([
+  const [consoleSource, layout, fetchBrand, logo, appIcon] = await Promise.all([
     read("components/operator-console.tsx"),
     read("app/layout.tsx"),
+    read("tools/fetch-brand.mjs"),
     readFile(new URL("../public/brand/fox-trading-mark.png", import.meta.url)),
     readFile(new URL("../app/icon.png", import.meta.url)),
   ]);
@@ -60,6 +61,8 @@ test("FOX TRADING branding is present and uses a production image asset", async 
   assert.match(consoleSource, /\/brand\/fox-trading-mark\.png/);
   assert.match(consoleSource, /width=\{48\} height=\{48\} priority/);
   assert.match(layout, /default: "FOX TRADING"/);
+  assert.match(fetchBrand, /935695493723815540daa4995544602bd5f2cc10/);
+  assert.match(fetchBrand, /Brand integrity failure/);
   assert.equal(logo.readUInt32BE(16), 512, "fox mark must retain its approved width");
   assert.equal(logo.readUInt32BE(20), 512, "fox mark must retain its approved height");
   assert.equal(
