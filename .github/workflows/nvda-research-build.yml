@@ -16,19 +16,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Materialize builder
-        shell: bash
-        run: |
-          python - <<'PY'
-          import base64, gzip
-          from pathlib import Path
-          src = Path('tmp/nvda-research/build_nvda_research.py.gz.b64').read_text().strip()
-          Path('/tmp/build_nvda_research.py').write_bytes(gzip.decompress(base64.b64decode(src)))
-          PY
-          python -m py_compile /tmp/build_nvda_research.py
+      - name: Syntax check builder
+        run: python -m py_compile tmp/nvda-research/build_nvda_research_min.py
 
       - name: Build and validate NVDA research bundle
-        run: python /tmp/build_nvda_research.py
+        run: python tmp/nvda-research/build_nvda_research_min.py
 
       - name: Show validation summary
         if: always()
