@@ -1,0 +1,52 @@
+name: NVDA Research Dataset Build
+
+on:
+  push:
+    branches:
+      - nvda-research-build-20260901
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Materialize builder
+        shell: bash
+        run: |
+          python - <<'PY'
+          import base64, gzip
+          from pathlib import Path
+          src = Path('tmp/nvda-research/build_nvda_research.py.gz.b64').read_text().strip()
+          Path('/tmp/build_nvda_research.py').write_bytes(gzip.decompress(base64.b64decode(src)))
+          PY
+          python -m py_compile /tmp/build_nvda_research.py
+
+      - name: Build and validate NVDA research bundle
+        run: python /tmp/build_nvda_research.py
+
+      - name: Show validation summary
+        if: always()
+        run: |
+          if [ -f dist/NVDA_validation_report.txt ]; then
+            cat dist/NVDA_validation_report.txt
+          fi
+
+      - name: Upload research artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: NVDA_complete_research_bundle
+          path: |
+            dist/NVDA_daily_research.csv
+            dist/NVDA_corporate_events.csv
+            dist/NVDA_validation_report.json
+            dist/NVDA_validation_report.txt
+            dist/NVDA_complete_research_bundle.zip
+          if-no-files-found: error
+          retention-days: 7
